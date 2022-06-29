@@ -3,18 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@any-ui/core": "^3.0.0-alpha.17",
+    "@any-ui/form": "^3.0.0-alpha.17",
+    "@material-ui/core": "4.12.3",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/styles": "4.11.4",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "clsx": "^1.1.1",
+    "mobx": "^6.0.4",
+    "mobx-react-lite": "^3.1.6",
+    "mobx-utils": "^6.0.1",
+
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-final-form": "6.5.3",
+    "react-scripts": "5.0.1",
+    "typescript": "4.4.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.41",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.7.4",
-    "web-vitals": "^2.1.4"
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
