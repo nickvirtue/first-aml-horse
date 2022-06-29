@@ -14,4 +14,16 @@ test('Renders List Page Title', async () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+test('Renders Default Horse Names', async () => {
+  render(<App />);
+  let linkElement = await screen.findByText("Artax");
+  expect(linkElement).toBeInTheDocument();
+  linkElement = await screen.findByText("Thunderdash");
+  expect(linkElement).toBeInTheDocument();
+  linkElement = await screen.findByText("Potoooooooo");
+  expect(linkElement).toBeInTheDocument();
+  linkElement = await screen.findByText("Shorty");
+  expect(linkElement).toBeInTheDocument();
+});
+
 
