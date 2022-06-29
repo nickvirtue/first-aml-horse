@@ -1,5 +1,5 @@
 import { IDoc } from '@any-ui/core'
-import {IHorse} from "./horseJSON";
+import {IHorse} from "../service/horseJSON";
 
 export class HorseDoc implements IDoc {
   constructor(
@@ -11,6 +11,12 @@ export class HorseDoc implements IDoc {
   ) {}
 
   static fromJSON(horse: IHorse): HorseDoc {
-    return new HorseDoc(horse.id, horse.name);
+    return new HorseDoc(
+      horse.id,
+      horse.name,
+      horse.profile?.favouriteFood,
+      horse.profile?.physical?.height,
+      horse.profile?.physical?.weight
+    );
   }
 }

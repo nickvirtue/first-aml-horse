@@ -1,0 +1,16 @@
+.View-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 0 25%;
+  padding: 0;
+}
+
+.View-container .label {
+  text-align: right;
+  color: #666
+}
+
+.View-container .data {
+  font-weight: bold;
+}

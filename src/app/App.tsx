@@ -4,13 +4,13 @@ import {navigation} from "@any-ui/core";
 import {Redirect, Route, Router, Switch} from "react-router";
 import {HorsesListPage} from "../horse/HorsesListPage";
 import {HorsesViewPage} from "../horse/HorsesViewPage";
-
+import "./App.css";
 
 const App = () => {
   return useObserver(() => {
     return (
-      <>
-        <h1>First AML Horse</h1>
+      <div className="App">
+        <h1 className="App-header">First AML Horse</h1>
         <Router history={navigation.browserHistory}>
           <Switch>
             <Route exact path="/" component={HorsesListPage}/>
@@ -18,7 +18,7 @@ const App = () => {
             <Redirect to="/"/>
           </Switch>
         </Router>
-      </>
+      </div>
 
   );
   });

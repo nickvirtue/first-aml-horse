@@ -1,8 +1,8 @@
 import {makeObservable, observable, runInAction} from 'mobx';
 import {Coll} from '@any-ui/core'
 import {HorseDoc} from './horseDoc'
-import HorseService from "./horseService";
-import {IHorse} from "./horseJSON";
+import HorseService from "../service/horseService";
+import {IHorse} from "../service/horseJSON";
 
 class HorsesStore {
   @observable
@@ -29,6 +29,10 @@ class HorsesStore {
       });
     }
   };
+
+  public byId(horseId: string): HorseDoc | undefined {
+    return this.horses.docs.find((horse) => horse.id === horseId)
+  }
 
 }
 
