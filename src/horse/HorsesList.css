@@ -8,7 +8,8 @@
   display: block;
   border: none;
   background-color: #ccc;
-  padding: .5em;
+  padding: .25em;
+  font-size: 1.5em;
   width: 100%;
   cursor: pointer;
   transition: background-color 250ms ease-out;
