@@ -8,3 +8,10 @@ test('Renders App Title', async () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+test('Renders List Page Title', async () => {
+  render(<App />);
+  const linkElement = await screen.findByText("Horses List");
+  expect(linkElement).toBeInTheDocument();
+});
+
+
